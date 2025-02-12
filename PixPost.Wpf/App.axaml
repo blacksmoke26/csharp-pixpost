@@ -1,0 +1,27 @@
+<Application xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:semi="https://irihi.tech/semi" xmlns:base="using:PixPost.Wpf.Core.Base"
+  xmlns:ursa="https://irihi.tech/ursa/themes/semi" x:Class="PixPost.Wpf.App"
+  RequestedThemeVariant="Dark">
+  <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+  <Application.DataTemplates>
+    <base:ViewLocator />
+  </Application.DataTemplates>
+
+  <Application.Styles>
+    <semi:SemiTheme Locale="en-US" />
+    <semi:SemiPopupAnimations />
+    <ursa:SemiTheme Locale="en-US" />
+    <StyleInclude Source="/Styling/Styles/Global.axaml" />
+  </Application.Styles>
+
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <MergeResourceInclude Source="/Styling/Dictionaries/Fonts.axaml" />
+        <MergeResourceInclude Source="/Styling/Dictionaries/Theme.axaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

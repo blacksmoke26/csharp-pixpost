@@ -1,0 +1,43 @@
+<u:UrsaWindow xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:vm="using:PixPost.Wpf.ViewModels"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:u="https://irihi.tech/ursa" mc:Ignorable="d" d:DesignWidth="800"
+  d:DesignHeight="450" x:Class="PixPost.Wpf.Views.MainWindow"
+  x:DataType="vm:MainWindowViewModel" Icon="/Assets/Images/AppIcon.ico"
+  Title="PixPost" WindowStartupLocation="CenterScreen"
+  ExtendClientAreaChromeHints="NoChrome" CanResize="True"
+  ExtendClientAreaTitleBarHeightHint="-1"
+  ExtendClientAreaToDecorationsHint="True" SystemDecorations="None"
+  BorderBrush="#101010" IsManagedResizerVisible="True"
+  TitleBarMargin="15 5 15 0">
+
+  <u:UrsaWindow.LeftContent>
+    <TextBlock Padding="0 7 0 0">
+      PixPost <TextBlock Text="by" Classes="Quaternary" />
+      <HyperlinkButton ToolTip.Tip="Visit my github profile"
+        NavigateUri="https://github.com/blacksmoke26">
+        Junaid Atari
+      </HyperlinkButton>
+    </TextBlock>
+  </u:UrsaWindow.LeftContent>
+
+  <Design.DataContext>
+    <vm:MainWindowViewModel />
+  </Design.DataContext>
+
+  <Panel Margin="0 45 0 0">
+    <Panel.Styles>
+      <Style Selector="Grid.Blur">
+        <Setter Property="Effect" Value="blur(10)"></Setter>
+      </Style>
+    </Panel.Styles>
+    <Grid Margin="10 0 10 10" RowDefinitions="Auto,*"
+      Classes.Blur="{Binding $parent[u:UrsaWindow].(u:OverlayDialogHost.IsInModalStatus)}">
+      <TextBlock Text="No contents here" HorizontalAlignment="Center"
+        VerticalAlignment="Center" />
+    </Grid>
+  </Panel>
+
+</u:UrsaWindow>
