@@ -6,11 +6,11 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
 using CommunityToolkit.Mvvm.Messaging;
-using PixPost.Wpf.Core.Base;
-using PixPost.Wpf.ViewModels;
-using PixPost.Wpf.Views;
+using PixPost.Core.Base;
+using PixPost.ViewModels;
+using PixPost.Views;
 
-namespace PixPost.Wpf;
+namespace PixPost;
 
 public partial class App : Application {
   public override void Initialize() {

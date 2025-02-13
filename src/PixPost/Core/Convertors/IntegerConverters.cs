@@ -4,7 +4,7 @@
 
 using Avalonia.Data.Converters;
 
-namespace PixPost.Wpf.Core.Convertors;
+namespace PixPost.Core.Convertors;
 
 /// <summary>
 /// Provides a set of useful <see cref="IValueConverter"/>s for working with integers.

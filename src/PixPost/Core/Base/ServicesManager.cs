@@ -3,9 +3,9 @@
 // Website: https://github.com/blacksmoke26/
 
 using CommunityToolkit.Mvvm.Messaging;
-using PixPost.Wpf.ViewModels;
+using PixPost.ViewModels;
 
-namespace PixPost.Wpf.Core.Base;
+namespace PixPost.Core.Base;
 
 public sealed class ServicesManager {
   /// <summary>

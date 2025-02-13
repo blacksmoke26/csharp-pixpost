@@ -4,7 +4,7 @@
 
 using System.Net.Http;
 
-namespace PixPost.Wpf.Core.Helpers;
+namespace PixPost.Core.Helpers;
 
 public static class FileHelper {
   /// <summary>

@@ -2,7 +2,7 @@
 // Copyright (c) 2025 Junaid Atari, and contributors
 // Website: https://github.com/blacksmoke26/
 
-namespace PixPost.Wpf.Core.Interfaces;
+namespace PixPost.Core.Interfaces;
 
 /// <summary>
 /// An interface to implement when a form with fields used within an overlay/model-dialog.

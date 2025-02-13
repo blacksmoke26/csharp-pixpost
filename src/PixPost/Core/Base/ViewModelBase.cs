@@ -2,12 +2,7 @@
 // Copyright (c) 2025 Junaid Atari, and contributors
 // Website: https://github.com/blacksmoke26/
 
-using Ursa.Controls;
+namespace PixPost.Core.Base;
 
-namespace PixPost.Wpf.Views;
-
-public partial class MainWindow : UrsaWindow {
-  public MainWindow() {
-    InitializeComponent();
-  }
+public class ViewModelBase : ObservableObject {
 }

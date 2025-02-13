@@ -3,10 +3,10 @@
 // Website: https://github.com/blacksmoke26/
 
 using Avalonia.Controls.Templates;
-using PixPost.Wpf.ViewModels;
-using PixPost.Wpf.Views;
+using PixPost.ViewModels;
+using PixPost.Views;
 
-namespace PixPost.Wpf.Core.Base;
+namespace PixPost.Core.Base;
 
 public class ViewLocator : IDataTemplate {
   /// <summary>
